@@ -44,11 +44,7 @@ wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-
 ```
 Then you can use brew to install the packages.
 ```{}
-brew install fastqc
-brew install bowtie2
-brew install samtools
-pip install multiqc
-pip install cutadapt
+wget -O cellranger-7.0.1.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-7.0.1.tar.gz?Expires=1668778645&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci03LjAuMS50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njg3Nzg2NDV9fX1dfQ__&Signature=XixQauaIqvgbegK9rSzldX-WM20EoTT4k0MnkVhFrZT8zThfm8yl5NeiHjFLQO3DXiEWuwzZhexdKFqbmw~Q4w7ZMkSru2iVgdJ3BRJaHOovGWape25izgUpJCx0uNQxf40DZ76TSXMz8Qi0uhCyfT5lMETku4Ucj1cDBXmxNF2U2YjUZ3Z0mC7Zfe4UCEHczjusquO6LWo~-3IOHeBPFMH7GiXvfFTLIB7qzFZQeY7VMovbILDtTnUWE3xGRARQTxGJJZ3Fl6QYr3MSbr3dBatj-jGGtzAmM-ly6xREhb5Mba3z-rnJF1YwEXuf8wsTVwuX1Yrd6kCwBhX29QpE-g__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
 ```
 
 ### Check the installation
