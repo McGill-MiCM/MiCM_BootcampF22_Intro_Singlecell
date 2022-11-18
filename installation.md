@@ -17,7 +17,7 @@ Please login to the Mammouth node, we will be using the UNIX terminal to downloa
 ```{}
 module load fastqc/0.11.9 mugqic/openjdk-jdk-19
 ```
-2.	Check you successuflly load fastqc and you will get "FastQC v0.11.9"
+2.	Check that you have successuflly load fastqc and you will get "FastQC v0.11.9"
 ```{}
 fastqc -v
 ```
@@ -31,7 +31,7 @@ module load StdEnv/2020
 ```{}
 module load trimmomatic/0.39
 ```
-3.	Check you successuflly load Trimmomatic and you will get "0.39"
+3.	Check that you have successuflly load Trimmomatic and you will get "0.39"
 ```{}
 java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar -version
 ```
@@ -57,7 +57,7 @@ tar -xzvf cellranger-7.0.1.tar.gz
 ```{}
 export PATH=/home/*USERNAME*/cellranger-7.0.1:$PATH
 ```
-5.	Test you have successfully install cellranger and you will get "cellranger cellranger-7.0.1"
+5.	Check that you have successfully install cellranger and you will get "cellranger cellranger-7.0.1"
 ```{}
 cellranger -V
 ```
