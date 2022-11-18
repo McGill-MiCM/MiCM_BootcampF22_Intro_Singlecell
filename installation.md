@@ -54,7 +54,7 @@ tar -xzvf cellranger-7.0.1.tar.gz
 ```{}
 export PATH=/home/*USERNAME*/cellranger-7.0.1:$PATH
 ```
-5.	Test you have successfully install cellranger:
+5.	Test you have successfully install cellranger and you will get "cellranger cellranger-7.0.1"
 ```{}
 cellranger -V
 ```
