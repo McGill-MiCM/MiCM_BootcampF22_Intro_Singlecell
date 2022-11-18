@@ -10,7 +10,7 @@ Please login to the Mammouth node, we will be using the UNIX terminal to downloa
 * Trimmomatic
 * CellRanger
 
-> To install the software please open your terminal and copy and paste the following commands inside the text boxes. Please replae *USERNAME* with your Mammouth node login name (e.g. micm09)
+> To install the software please open your terminal and copy and paste the following commands inside the text boxes. Please replace *USERNAME* with your Mammouth node login name (e.g. micm09)
 
 ### FastQC
 1.	Load module
