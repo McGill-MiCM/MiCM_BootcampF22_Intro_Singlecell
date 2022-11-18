@@ -25,8 +25,9 @@ unzip Trimmomatic-0.39.zip
 cd /home/*USERNAME*/Trimmomatic-0.39
 ```
 4.	Type below code in terminal and press “Enter”, you will get “0.39” means you have downloaded trimmomatic successfully.
+```{}
 java -jar trimmomatic-0.39.jar -version
-![image](https://user-images.githubusercontent.com/114359601/202598422-de53cc48-984e-4db7-85bf-06258a58bbb4.png)
+```
 
 ### Mac OS
 First install [Homebrew](https://brew.sh/) or any other package manager.
