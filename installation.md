@@ -1,4 +1,4 @@
-# Intro to NGS data formats and pre-processing
+# Intro to Single Cell 
 
 ## Requirements
 We will be using the unix terminal to run our analyses. so be sure you have access to one. 
@@ -40,7 +40,7 @@ pip install cutadapt
 ### Mac OS
 First install [Homebrew](https://brew.sh/) or any other package manager.
 ```{}
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip 
 ```
 Then you can use brew to install the packages.
 ```{}
