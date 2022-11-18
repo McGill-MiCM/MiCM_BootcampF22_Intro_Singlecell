@@ -40,12 +40,14 @@ java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar -version
 1. Download cellranger and reference file
 CellRanger:
 ```{}
-wget -O cellranger-7.0.1.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-7.0.1.tar.gz?Expires=1668779973&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci03LjAuMS50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njg3Nzk5NzN9fX1dfQ__&Signature=SYMp58FKQ0PvMQi3bpE2hxwWLpY2TKFAwde7hIEPELykaH3QIVwNugWKyj6KLHD9EokTrIdVOJubtv3ia6DcOKepindX9EYiAsEP5AG-SzO1rHrj-FU216zgID5sefB95JceZYy4xYbPWfTxwS6TtQoCNuiktbjSi8R0f8czg5893W1kMwapy1ms7y4~HNMd6gWGPPmwmq8PnV9fyB5ovCmaCCbrDk4OXNGu65yQ953pJhLTvYfzr14D1ghFzWG-R0TfCnY2ddMCpc~3NlLStLGQwJ3mBJuolcAaTdGvLuhUFh3WR4KieMFB1r9~R0u5HcNrThsiJzr6KmvcigmQ7w__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
+wget -O cellranger-7.0.1.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-7.0.1.tar.gz?Expires=1668827098&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci03LjAuMS50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njg4MjcwOTh9fX1dfQ__&Signature=aAIFlNaqSrsuYJzS2wR-lSOWI7UJo0G-~hXgJ3mwgk6bJwunsC6GH9r1NDPMvE~dABeoWCFSdDV0FjisFaYV7lwkyx30dEP4h1lmeth0NpZoL5QgHRzFbQJjDeQEsv1B8WMDMLOwE-dVfYXIaiQ7YbQVzqAQ6Vlu2YxZcMoxskIUPDbUf10TbpK4kbBU57Qg4IB4uLQGfXpyvBzmuAVEoqM-jqGucZY0NIbeRjtN4u-Cqs0UEJAGReyS1xQdYcx-fwqyTxQPPSB9POuM8inGe97M9pwQJWtRm4C2mGzrxdkksgbFmQEWoTuNT2TgyxVl8P1npXQtBRYSF6ccmWxrNQ__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
 ```
 Reference file: 
 ```{}
 wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz
 ```
+> if above link doesn't work, please go to https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest get the updated link to download "Cell Ranger - 7.0.1" and human reference "References - 2020-A (July 7, 2020)". You need to register first.
+
 3.	Unzip tar file:
 ```{}
 tar -xzvf refdata-gex-GRCh38-2020-A.tar.gz
