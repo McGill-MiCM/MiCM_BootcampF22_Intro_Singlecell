@@ -9,7 +9,7 @@ Please login to the Mammouth node, we will be using the UNIX terminal to downloa
 * Trimmomatic
 * CellRanger
 
-> To install the software please open your terminal and copy and paste the following commands inside the text boxes. Please replae *USERNAME* with your Mammouth node login name.
+> To install the software please open your terminal and copy and paste the following commands inside the text boxes. Please replae *USERNAME* with your Mammouth node login name (e.g. micm09)
 
 ### Download Trimmomatic
 1.	Please download “binary” file of Trimmomatic 
@@ -29,24 +29,32 @@ cd /home/*USERNAME*/Trimmomatic-0.39
 java -jar trimmomatic-0.39.jar -version
 ```
 
-### Mac OS
-First install [Homebrew](https://brew.sh/) or any other package manager.
+### Download CellRanger
+1.	Exit trimmomatic folder.
 ```{}
-wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip 
+cd /home/*USERNAME*
 ```
-Then you can use brew to install the packages.
+2.	Download cellranger and reference file
+CellRanger:
 ```{}
-wget -O cellranger-7.0.1.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-7.0.1.tar.gz?Expires=1668778645&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci03LjAuMS50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njg3Nzg2NDV9fX1dfQ__&Signature=XixQauaIqvgbegK9rSzldX-WM20EoTT4k0MnkVhFrZT8zThfm8yl5NeiHjFLQO3DXiEWuwzZhexdKFqbmw~Q4w7ZMkSru2iVgdJ3BRJaHOovGWape25izgUpJCx0uNQxf40DZ76TSXMz8Qi0uhCyfT5lMETku4Ucj1cDBXmxNF2U2YjUZ3Z0mC7Zfe4UCEHczjusquO6LWo~-3IOHeBPFMH7GiXvfFTLIB7qzFZQeY7VMovbILDtTnUWE3xGRARQTxGJJZ3Fl6QYr3MSbr3dBatj-jGGtzAmM-ly6xREhb5Mba3z-rnJF1YwEXuf8wsTVwuX1Yrd6kCwBhX29QpE-g__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
+wget -O cellranger-7.0.1.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-7.0.1.tar.gz?Expires=1668779973&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci03LjAuMS50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njg3Nzk5NzN9fX1dfQ__&Signature=SYMp58FKQ0PvMQi3bpE2hxwWLpY2TKFAwde7hIEPELykaH3QIVwNugWKyj6KLHD9EokTrIdVOJubtv3ia6DcOKepindX9EYiAsEP5AG-SzO1rHrj-FU216zgID5sefB95JceZYy4xYbPWfTxwS6TtQoCNuiktbjSi8R0f8czg5893W1kMwapy1ms7y4~HNMd6gWGPPmwmq8PnV9fyB5ovCmaCCbrDk4OXNGu65yQ953pJhLTvYfzr14D1ghFzWG-R0TfCnY2ddMCpc~3NlLStLGQwJ3mBJuolcAaTdGvLuhUFh3WR4KieMFB1r9~R0u5HcNrThsiJzr6KmvcigmQ7w__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
 ```
-
-### Check the installation
-To check that the program works, you can check if the help message gets printed:
+Reference file: 
 ```{}
-fastqc --help
-bowtie2 --help
-samtools --help
-multiqc --help
-cutadapt --help
+wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz
 ```
-
-> Some problems may arise while installing software. Be patient and read the error message, it could be due to some dependecies missing. Googling the error message is a good first attempt to solve it.
+3.	Unzip tar file:
+```{}
+tar -xzvf refdata-gex-GRCh38-2020-A.tar.gz
+```
+```{}
+tar -xzvf cellranger-7.0.1.tar.gz
+```
+4.	Put cellranger to $PATH:
+```{}
+export PATH=/home/*USERNAME*/cellranger-7.0.1:$PATH
+```
+5.	Test you have successfully install cellranger:
+```{}
+cellranger -V
+```
