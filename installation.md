@@ -1,41 +1,32 @@
-# Intro to Single Cell 
+# Intro to single cell technologies
 
 ## Requirements
-We will be using the unix terminal to run our analyses. so be sure you have access to one. 
-
-* Mac OS and any linux distribution will have a terminal already
-    * Mac OS: search for terminal in your spotlight search
-* Windows users: 
-    * Option 1: Download a [unix subsystem (WSL)](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview) **recommended
-    * Option 2: Download [MobaXterm](https://mobaxterm.mobatek.net/)
-
+Please login to the Mammouth node, we will be using the UNIX terminal to download all the software and run all the analyses.
 
 > Note: It is required that you have some *very basic* knowledge on how to use the linux terminal as we will not go through basic unix commands in the workshop. 
-Be sure you are okay with moving files, creating directories, and reading file content. For example: up until tutorial 2 from [this tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/). Here's another unix basics [tutorial](https://www.tutorialspoint.com/unix/index.htm).
 
 ## Sofware
-* Python3 is required 
-* conda can be useful to install cutadapt 
+* Trimmomatic
+* CellRanger
 
-During the workshop we will be using some known bioinformatics software to process our dataset:
-* [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-* [MultiQC](https://multiqc.info/)
-* [CutAdapt](https://cutadapt.readthedocs.io/en/stable/installation.html) - can be installed with pip or with conda
-* [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
-* [Samtools](http://www.htslib.org/)
-* [IGV](https://software.broadinstitute.org/software/igv/download) - Optional, if you want to visualize. Please install by following the website instructions.
+> To install the software please open your terminal and copy and paste the following commands inside the text boxes. Please replae *USERNAME* with your Mammouth node login name.
 
-> To install the software please open your terminal and copy and paste the following commands inside the text boxes.
-
-### Linux distribution and Windows with WSL
-Most of the software we need is availble through the package manager.
+### Download Trimmomatic
+1.	Please download “binary” file of Trimmomatic 
 ```{}
-sudo apt install fastqc
-sudo apt install bowtie2
-sudo apt install samtools
-pip install multiqc
-pip install cutadapt
+wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
 ```
+2.	Unzip file and you will get “Trimmomatic-0.39” folder.
+```{}
+unzip Trimmomatic-0.39.zip
+```
+4.	Navigate to Trimmomatic-0.39 folder
+```{}
+cd /home/*USERNAME*/Trimmomatic-0.39
+```
+4.	Type below code in terminal and press “Enter”, you will get “0.39” means you have downloaded trimmomatic successfully.
+java -jar trimmomatic-0.39.jar -version
+![image](https://user-images.githubusercontent.com/114359601/202598422-de53cc48-984e-4db7-85bf-06258a58bbb4.png)
 
 ### Mac OS
 First install [Homebrew](https://brew.sh/) or any other package manager.
