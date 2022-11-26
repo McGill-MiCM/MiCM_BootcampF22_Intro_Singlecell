@@ -34,7 +34,7 @@ ls
 ```
 5. Look at the fastq file
 ```{}
-gzip -d pbmc_1k_v3_S1_L001_I1_001.fastq.gz
+gunzip -c pbmc_1k_v3_S1_L001_I1_001.fastq.gz > pbmc_1k_v3_S1_L001_I1_001.fastq
 head -n 36 pbmc_1k_v3_S1_L001_I1_001.fastq
 ```
 
@@ -49,6 +49,8 @@ module load fastqc/0.11.9 mugqic/openjdk-jdk-19
 fastqc -v
 ```
 
-3. 
-
+3. Run the tool fastqc to assess the quality of the sequencing
+```{}
+fastqc pbmc_1k_v3_S1_L001_I1_001.fastq.gz
+```
 
