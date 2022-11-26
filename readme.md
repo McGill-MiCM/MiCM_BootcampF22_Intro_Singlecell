@@ -27,15 +27,4 @@ ls
 pbmc_1k_v3_fastqs.tar
 
 ### Fastqc
-1. Load StdEnv
-```{}
-module load StdEnv/2020
-```
-2. Load Trimmomatic
-```{}
-module load trimmomatic/0.39
-```
-3.	Check that you have successuflly load Trimmomatic and you will get "0.39"
-```{}
-java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar -version
-```
+
