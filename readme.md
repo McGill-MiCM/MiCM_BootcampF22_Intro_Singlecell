@@ -54,3 +54,14 @@ fastqc -v
 fastqc pbmc_1k_v3_S1_L001_I1_001.fastq.gz
 ```
 
+4.  To make it easier, let’s look at the FASTQC results on your web browser 
+```{}
+mkdir ~/public_html
+cp ~/intro_single_cell/pbmc_1k_v3_fastqs/*.html ~/public_html/
+chmod -R 755 ~
+```
+You can now access your files from a web browser at (by replacing “XX” by your username):
+https://workshop2021a.vhost37.genap.ca/~micmXX
+
+### Cellranger
+
