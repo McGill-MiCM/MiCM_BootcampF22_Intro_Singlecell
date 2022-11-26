@@ -81,12 +81,12 @@ wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz
 tar -zxvf refdata-gex-GRCh38-2020-A.tar.gz
 ```
 
-4. Run cellranger count (~hours)
+4. Run cellranger count (~hours) (change to your username) 
 ```{}
 cellranger count --id=run_count_1kpbmcs \
-   --fastqs=/home/micm08/intro_single_cell/pbmc_1k_v3_fastqs \
+   --fastqs=/home/micmXX/intro_single_cell/pbmc_1k_v3_fastqs \
    --sample=pbmc_1k_v3 \
-   --transcriptome=/home/micm08/intro_single_cell/refdata-gex-GRCh38-2020-A
+   --transcriptome=/home/micmXX/intro_single_cell/refdata-gex-GRCh38-2020-A
 ```
 
 5. You can check the outputs from official website:
