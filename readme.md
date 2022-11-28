@@ -64,6 +64,11 @@ You can now access your files from a web browser at (by replacing “XX” by yo
 https://workshop2021a.vhost37.genap.ca/~micmXX
 
 ### Cellranger
+0. If you already installed cellranger v7.0, you can skip steps 1 to 3. You can check that you have successfully download cellranger 
+```{}
+cellranger --version
+```
+
 1. Load module
 ```{}
 source $EBROOTCELLRANGER/sourceme.bash
@@ -76,12 +81,15 @@ cellranger --version
 
 3. Download reference (~ 5mins)
 ```{}
-cd ..
 wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz
+```
+
+4. Unzip reference:
+```{}
 tar -zxvf refdata-gex-GRCh38-2020-A.tar.gz
 ```
 
-4. Run cellranger count (~hours) (change to your username) 
+5. Run cellranger count (~hours) (change to your username) 
 ```{}
 cellranger count --id=run_count_1kpbmcs \
    --fastqs=/home/micmXX/intro_single_cell/pbmc_1k_v3_fastqs \
@@ -89,5 +97,5 @@ cellranger count --id=run_count_1kpbmcs \
    --transcriptome=/home/micmXX/intro_single_cell/refdata-gex-GRCh38-2020-A
 ```
 
-5. You can check the outputs from official website:
+6. You can check the outputs from official website:
 https://www.10xgenomics.com/resources/datasets/1-k-pbm-cs-from-a-healthy-donor-v-3-chemistry-3-standard-3-0-0
