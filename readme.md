@@ -64,14 +64,9 @@ You can now access your files from a web browser at (by replacing “XX” by yo
 https://workshop2021a.vhost37.genap.ca/~micmXX
 
 ### Cellranger
-0. If you already installed cellranger v7.0, you can skip steps 1 to 3. You can check that you have successfully download cellranger 
+1. Set
 ```{}
-cellranger --version
-```
-
-1. Load module
-```{}
-source $EBROOTCELLRANGER/sourceme.bash
+export PATH=/home/*USERNAME*/cellranger-7.0.1:$PATH
 ```
 
 2.	Check that you have successuflly load cellranger
