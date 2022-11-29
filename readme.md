@@ -64,7 +64,7 @@ You can now access your files from a web browser at (by replacing “XX” by yo
 https://workshop2021a.vhost37.genap.ca/~micmXX
 
 ### Cellranger
-1. Set
+1. Set cellranger to path
 ```{}
 export PATH=/home/*USERNAME*/cellranger-7.0.1:$PATH
 ```
@@ -74,14 +74,7 @@ export PATH=/home/*USERNAME*/cellranger-7.0.1:$PATH
 cellranger --version
 ```
 
-3. Download reference (~ 5mins)
-```{}
-cd ..
-wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz
-tar -zxvf refdata-gex-GRCh38-2020-A.tar.gz
-```
-
-4. Run cellranger count (~hours) (change to your username) 
+3. Run cellranger count (~hours) (change to your username) 
 ```{}
 cellranger count --id=run_count_1kpbmcs \
    --fastqs=/home/micmXX/intro_single_cell/pbmc_1k_v3_fastqs \
@@ -89,5 +82,5 @@ cellranger count --id=run_count_1kpbmcs \
    --transcriptome=/home/micmXX/intro_single_cell/refdata-gex-GRCh38-2020-A
 ```
 
-5. You can check the outputs from official website:
+4. You can check the outputs from official website:
 https://www.10xgenomics.com/resources/datasets/1-k-pbm-cs-from-a-healthy-donor-v-3-chemistry-3-standard-3-0-0
