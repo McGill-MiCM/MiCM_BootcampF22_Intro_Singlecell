@@ -84,3 +84,7 @@ cellranger count --id=run_count_1kpbmcs \
 
 4. You can check the outputs from official website:
 https://www.10xgenomics.com/resources/datasets/1-k-pbm-cs-from-a-healthy-donor-v-3-chemistry-3-standard-3-0-0
+
+### Scanpy
+1. Open the following colab and copy to your account
+### example codes: [![Open In Colab](https://colab.research.google.com/drive/16_UMPpKiiPzSkQiXLPoBC1_N8CKWgQub?usp=sharing)
