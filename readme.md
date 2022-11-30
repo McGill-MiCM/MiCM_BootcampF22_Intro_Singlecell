@@ -87,4 +87,13 @@ https://www.10xgenomics.com/resources/datasets/1-k-pbm-cs-from-a-healthy-donor-v
 
 ### Scanpy
 1. Open the following colab and copy to your account
-### example codes: [![Open In Colab](https://colab.research.google.com/drive/16_UMPpKiiPzSkQiXLPoBC1_N8CKWgQub?usp=sharing)
+##### Tutorial code: ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)
+(https://colab.research.google.com/drive/1L-n5zzEoTpVFnay45Ge_vr85Fc4G24U3?usp=sharing)
+
+[![Open In Colab]([https://colab.research.google.com/drive/1Zg3IQPqhHOwPT8rN6XwjaNy3004jKy_z?usp=sharing](https://colab.research.google.com/drive/1kQe-zZOmE5kmoAkB0iVJwPqRGXqI781C?usp=sharing))
+
+##### Tutorial solution code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/drive/1kQe-zZOmE5kmoAkB0iVJwPqRGXqI781C?usp=sharing)
+
+
+### example codes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Zg3IQPqhHOwPT8rN6XwjaNy3004jKy_z?usp=sharing)
