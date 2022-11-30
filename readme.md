@@ -88,6 +88,6 @@ https://www.10xgenomics.com/resources/datasets/1-k-pbm-cs-from-a-healthy-donor-v
 ### Scanpy
 Open the following tutorial codes in colab and copy the file to your account
 
-##### Tutorial codes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kQe-zZOmE5kmoAkB0iVJwPqRGXqI781C?usp=sharing)
+##### Tutorial codes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QNWQ3fJHBUzgABsRDRTR79sf5bPwWYqc?usp=sharing)
 
-##### Tutorial solution codes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kQe-zZOmE5kmoAkB0iVJwPqRGXqI781C?usp=sharing)
+##### Tutorial solution codes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1t_QQ0w1IfraS-Pjz6Ra-sX0WpYsJ4YVh?usp=sharing)
